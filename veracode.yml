@@ -27,12 +27,12 @@ veracode_static_scan:
   #If the break_build_on_policy_error is set to true, this is the error message that will be displayed if the pipeline scan fails to complete in time or with an error.
   error_message: "Veracode SAST scan faced a problem. Please contact your Veracode administrator for more information. If you are a Veracode administrator, please contact Veracode support."
   policy: 'Veracode Recommended Medium + SCA'
-  # If you would like to use your own GitHub workflow to package artifacts,
+  # If you would like to use your own Azure workflow to package artifacts,
   # set use_custom_workflow to the name of the workflow you'd like to use. 
   # Set the property to 'default' if you'd like to use the default
   # workflow for each repository.
   use_custom_workflow: WORKFLOW_NAME
-  #If the create_issue is set to true, GitHub Issues will be created for static findings.
+  #If the create_issue is set to true, Azure Work Items will be created for static findings.
   create_work_items: false
 
 veracode_sca_scan:   
